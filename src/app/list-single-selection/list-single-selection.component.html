@@ -1,0 +1,12 @@
+<div class="column full-height center">
+    <div class="listbox">
+        <mat-selection-list #selectionList>
+            <mat-list-option checkboxPosition="before" *ngFor="let entry of list" [value]="entry.id">
+                {{entry.name}}
+            </mat-list-option>
+        </mat-selection-list>
+    </div>
+    <p>
+        Options selected: {{selectedValues}}
+    </p>
+</div>
